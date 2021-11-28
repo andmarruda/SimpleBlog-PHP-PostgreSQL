@@ -1,0 +1,10 @@
+CREATE TABLE image(
+	id_image BIGSERIAL NOT NULL CONSTRAINT image_pkey PRIMARY KEY,
+	filename VARCHAR(50) NOT NULL,
+	created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+	filesize BIGINT NOT NULL,
+	width INTEGER NOT NULL,
+	height INTEGER NOT NULL
+) WITH(
+oids=false
+);
