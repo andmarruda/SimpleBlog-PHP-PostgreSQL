@@ -1,0 +1,4 @@
+CREATE DATABASE simpleblog
+    WITH 
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
