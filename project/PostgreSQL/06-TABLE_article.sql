@@ -7,3 +7,8 @@ CREATE TABLE article(
 ) WITH(
 oids=false
 );
+
+ALTER TABLE article 
+ADD COLUMN friendly_url VARCHAR(100) NOT NULL,
+ADD COLUMN keywords varchar(100) not null,
+ADD COLUMN meta_description varchar(100) not null;
